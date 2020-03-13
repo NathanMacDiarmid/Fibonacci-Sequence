@@ -1,0 +1,10 @@
+
+def fib(n):
+    lst = [0, 1]
+    for i in range(n):
+        if i > 1:
+            x = lst[-1] + lst[-2]
+            lst.append(x)
+    return lst
+
+print(fib(9))
